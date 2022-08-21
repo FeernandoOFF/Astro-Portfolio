@@ -5,19 +5,22 @@ export default function CodeBlock() {
       <pre data-prefix="1">
         {' '}
         <span className="text-primary">const </span>
-        <span className="text-secondary">Fernando</span> : {'{'}
+        <span className="text-secondary">Fernando</span> = {'{'}
       </pre>
-      <pre data-prefix="2" class="pl-3">
-        <span className="text-primary">name</span> : "Fernando Obregon"
+      <pre data-prefix="2">
+        <span className="text-primary pl-5">name</span> : "Fernando Obregon"
       </pre>
-      <pre data-prefix="3" class="pl-3">
-        <span className="text-primary">job</span> : "Software developer"
+      <pre data-prefix="3">
+        <span className="text-primary pl-5">job</span> : "Software developer"
       </pre>
-      <pre data-prefix="4" class="pl-3">
-        <span className="text-primary">passions</span> :
+      <pre data-prefix="4">
+        <span className="text-primary pl-5">passions</span> :
         {`[ "Code","Travel","Learning" ]`}
       </pre>
-      <pre data-prefix="5"> {'}'} </pre>
+      <pre data-prefix="5">
+        <span className="text-primary pl-5">location</span> : "Dublin, Ireland"
+      </pre>
+      <pre data-prefix="6"> {'}'} </pre>
     </div>
   );
 }

@@ -9,24 +9,28 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 		<MainHead title="Home page | Feernandooff" />
 	</head>
 	<body>
-		<Nav />
 		<main
-			class="min-h-screen flex-col-reverse md:flex-row flex justify-center md:justify-between relative background-pattern"
+			class="min-h-screen flex-col-reverse md:flex-row flex justify-center md:justify-between relative background-pattern pb-[10vh]"
 		>
-			<div class="half w-full md:w-1/2 md:h-screen flex md:bg-[#141B2F]">
+			<Nav />
+			<div
+				class="half w-full md:w-1/2 md:h-screen flex background-shape relative"
+			>
 				<div class="p-4 grid place-items-center">
 					<h1
-						class="text-5xl font-semibold md:place-self-end uppercase"
+						class="text-3xl md:text-5xl font-semibold md:place-self-end uppercase"
 					>
 						FeernandoOFF
 					</h1>
-					<figure class="lg:translate-x-[20%] md:place-self-start">
-						<img src="/assets/desktop.svg" alt="" />
+					<figure
+						class="lg:translate-x-[20%] md:place-self-start w-full"
+					>
+						<img src="/assets/desktop.svg" alt="" class="w-full" />
 					</figure>
 				</div>
 			</div>
 			<div
-				class="w-full lg:w-1/2 md:min-h-screen my-glass grid place-items-center"
+				class="w-full lg:w-1/2 md:min-h-screen grid place-items-center"
 			>
 				<CodeBlock />
 			</div>
@@ -35,28 +39,33 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 				alt=""
 				class="absolute w-screen top-[30vh] right-0 -z-10"
 			/>
+			<!-- <div class="absolute w-screen h-screen opacity-0 my-glass"></div> -->
+			<div
+				class="absolute w-screen bottom-0 h-20 bg-gradient-to-t from-[#141B2F] to-transparent"
+			>
+			</div>
 		</main>
 		<section class="bg-[#141B2F] p-8">
 			<div class="max-w-xl mx-auto">
-				<h2 class="text-5xl font-semibold md:place-self-end uppercase">
+				<h2 class="text-5xl font-bold md:place-self-end mb-10">
 					About
 				</h2>
 				<p>
 					I'm a University Student, a self-taught Full Stack Web
 					Developer, and a technical-minded Entrepreneur.
 				</p>
-				<ul>
-					<li>
+				<ul class="pl-4 list-disc">
+					<li class="my-4">
 						As a Student, I'm currently pursuing a Bachelor of
 						Digital Design and Interactive Technologies at the IT
 						University of Copenhagen.
 					</li>
-					<li>
+					<li class="my-4">
 						As a Student, I'm currently pursuing a Bachelor of
 						Digital Design and Interactive Technologies at the IT
 						University of Copenhagen.
 					</li>
-					<li>
+					<li class="my-4">
 						As a Student, I'm currently pursuing a Bachelor of
 						Digital Design and Interactive Technologies at the IT
 						University of Copenhagen.
@@ -64,10 +73,41 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 				</ul>
 			</div>
 		</section>
+		<section class="h-screen background-pattern relative pt-[20vh]">
+			<div
+				class="absolute w-screen top-0 h-20 bg-gradient-to-b from-[#141B2F] to-transparent"
+			>
+			</div>
+			<div class="skills w-4/5 mx-auto">
+				<img src="/assets/skills.png" alt="" />
+				<p class="text-[#818CF8] font-semibold text-md my-5">
+					What I can build
+				</p>
+				<h2
+					class="text-3xl font-semibold md:place-self-end uppercase text-white"
+				>
+					Skills
+				</h2>
+				<p class="md:w-2/3 my-4">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+					Expedita, aperiam ipsum tenetur animi laborum accusantium
+					corrupti soluta sit officiis itaque nihil? Ex mollitia sunt,
+					quasi necessitatibus ratione pariatur reiciendis excepturi.
+				</p>
+				<button class="btn"> Contact me</button>
+			</div>
+		</section>
 		<style>
 			.my-glass {
-				backdrop-filter: blur(1px);
+				backdrop-filter: blur(5px);
 				-webkit-backdrop-filter: blur(5px);
+			}
+			@media screen and (min-width: 1024px) {
+				.background-shape {
+					background-image: url("/assets/shape.svg");
+					background-size: contain;
+					background-repeat: no-repeat;
+				}
 			}
 			.background-pattern {
 				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%234c5670' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
