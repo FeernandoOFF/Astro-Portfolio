@@ -1,5 +1,8 @@
 ---
 import Nav from "../components/Nav/index.jsx";
+import ElectronicIcon from "../components/Icons/electronic-skill";
+import MobileIcon from "../components/Icons/mobileSkills";
+import DesktopIcon from "../components/Icons/desktopIcon";
 import MainHead from "../components/MainHead.astro";
 import CodeBlock from "../components/Landing/CodeBlock.jsx";
 ---
@@ -94,7 +97,12 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 					corrupti soluta sit officiis itaque nihil? Ex mollitia sunt,
 					quasi necessitatibus ratione pariatur reiciendis excepturi.
 				</p>
-				<button class="btn"> Contact me</button>
+				<a href="/projects" class="btn">See all projects</a>
+				<div class="flex p-8 my-4 gap-4">
+					<ElectronicIcon />
+					<DesktopIcon />
+					<MobileIcon />
+				</div>
 			</div>
 		</section>
 		<style>
