@@ -1,9 +1,8 @@
 ---
 import Nav from "../components/Nav/index.jsx";
-import ElectronicIcon from "../components/Icons/electronic-skill";
-import MobileIcon from "../components/Icons/mobileSkills";
-import DesktopIcon from "../components/Icons/desktopIcon";
 import MainHead from "../components/MainHead.astro";
+
+import ProjectShowcase from "../components/Landing/ProjectShowcase";
 import CodeBlock from "../components/Landing/CodeBlock.jsx";
 ---
 
@@ -86,23 +85,7 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 				<p class="text-[#818CF8] font-semibold text-md my-5">
 					What I can build
 				</p>
-				<h2
-					class="text-3xl font-semibold md:place-self-end uppercase text-white"
-				>
-					Skills
-				</h2>
-				<p class="md:w-2/3 my-4">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Expedita, aperiam ipsum tenetur animi laborum accusantium
-					corrupti soluta sit officiis itaque nihil? Ex mollitia sunt,
-					quasi necessitatibus ratione pariatur reiciendis excepturi.
-				</p>
-				<a href="/projects" class="btn">See all projects</a>
-				<div class="flex p-8 my-4 gap-4">
-					<ElectronicIcon />
-					<DesktopIcon />
-					<MobileIcon />
-				</div>
+				<ProjectShowcase client:visible />
 			</div>
 		</section>
 		<style>

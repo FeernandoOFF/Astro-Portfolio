@@ -8,7 +8,7 @@ export default function DesktopIcon() {
       height="48"
       fill="none"
       aria-hidden="true"
-      class="mb-6 text-slate-300 group-hover:text-slate-400 dark:text-slate-600 dark:group-hover:text-slate-500"
+      class={`mb-6  `}
     >
       <path
         d="M5 13a8 8 0 0 1 8-8h22a8 8 0 0 1 8 8v22a8 8 0 0 1-8 8H13a8 8 0 0 1-8-8V13Z"
