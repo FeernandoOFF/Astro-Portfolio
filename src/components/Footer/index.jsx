@@ -7,7 +7,7 @@ function Footer() {
       <p>Made with: </p>
       <div className="flex mx-auto w-full justify-center p-4 gap-4">
         <div
-          class="aspect-square w-8 m-2 md:m-0 block relative before:content-[attr(data-tip)] before:opacity-0 before:transition-all before:block before:absolute before:py-2 before:px-2 before:bg-white before:bottom-12 before:whitespace-nowrap before:rounded before:-left-2 before:uppercase before:text-xs before:font-semibold after:content[''] after:opacity-0 after:block after:absolute after:w-0 after:h-0 after:border-l-8 after:border-l-transparent after:border-r-8 after:border-r-transparent after:border-t-8 after:border-t-white after:bottom-10 after:left-1 after:transition-all lg:hover:before:opacity-100 lg:hover:after:opacity-100"
+          class="aspect-square w-8 m-2 md:m-0 block relative md:before:content-[attr(data-tip)] before:opacity-0 before:transition-all before:block before:absolute before:py-2 before:px-2 before:bg-white before:bottom-12 before:whitespace-nowrap before:rounded before:-left-2 before:uppercase before:text-xs before:font-semibold after:content[''] after:opacity-0 after:block after:absolute after:w-0 after:h-0 after:border-l-8 after:border-l-transparent after:border-r-8 after:border-r-transparent after:border-t-8 after:border-t-white after:bottom-10 after:left-1 after:transition-all lg:hover:before:opacity-100 lg:hover:after:opacity-100"
           data-tip="Build with Astro"
         >
           <a href="https://astro.build/">
@@ -20,7 +20,7 @@ function Footer() {
           </a>
         </div>
         <div
-          class="aspect-square w-8 m-2 md:m-0 block relative before:content-[attr(data-tip)] before:opacity-0 before:transition-all before:block before:absolute before:py-2 before:px-2 before:bg-white before:bottom-12 before:whitespace-nowrap before:rounded before:-left-2 before:uppercase before:text-xs before:font-semibold after:content[''] after:opacity-0 after:block after:absolute after:w-0 after:h-0 after:border-l-8 after:border-l-transparent after:border-r-8 after:border-r-transparent after:border-t-8 after:border-t-white after:bottom-10 after:left-1 after:transition-all lg:hover:before:opacity-100 lg:hover:after:opacity-100"
+          class="aspect-square w-8 m-2 md:m-0 block relative md:before:content-[attr(data-tip)] before:opacity-0 before:transition-all before:block before:absolute before:py-2 before:px-2 before:bg-white before:bottom-12 before:whitespace-nowrap before:rounded before:-left-2 before:uppercase before:text-xs before:font-semibold after:content[''] after:opacity-0 after:block after:absolute after:w-0 after:h-0 after:border-l-8 after:border-l-transparent after:border-r-8 after:border-r-transparent after:border-t-8 after:border-t-white after:bottom-10 after:left-1 after:transition-all lg:hover:before:opacity-100 lg:hover:after:opacity-100"
           data-tip="CSS by Tailwind CSS"
         >
           <a href="https://tailwindcss.com/">
@@ -33,7 +33,7 @@ function Footer() {
           </a>
         </div>
         <div
-          class="aspect-square w-8 m-2 md:m-0 block relative before:content-[attr(data-tip)] before:opacity-0 before:transition-all before:block before:absolute before:py-2 before:px-2 before:bg-white before:bottom-12 before:whitespace-nowrap before:rounded before:-left-2 before:uppercase before:text-xs before:font-semibold after:content[''] after:opacity-0 after:block after:absolute after:w-0 after:h-0 after:border-l-8 after:border-l-transparent after:border-r-8 after:border-r-transparent after:border-t-8 after:border-t-white after:bottom-10 after:left-1 after:transition-all lg:hover:before:opacity-100 lg:hover:after:opacity-100"
+          class="aspect-square w-8 m-2 md:m-0 block relative md:before:content-[attr(data-tip)] before:opacity-0 before:transition-all before:block before:absolute before:py-2 before:px-2 before:bg-white before:bottom-12 before:whitespace-nowrap before:rounded before:-left-2 before:uppercase before:text-xs before:font-semibold after:content[''] after:opacity-0 after:block after:absolute after:w-0 after:h-0 after:border-l-8 after:border-l-transparent after:border-r-8 after:border-r-transparent after:border-t-8 after:border-t-white after:bottom-10 after:left-1 after:transition-all lg:hover:before:opacity-100 lg:hover:after:opacity-100"
           data-tip="Frontend by React JS"
         >
           <a href="https://tailwindcss.com/">
