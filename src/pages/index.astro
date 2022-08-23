@@ -1,5 +1,6 @@
 ---
 import Nav from "../components/Nav/index.jsx";
+import Footer from "../components/Footer/index";
 import MainHead from "../components/MainHead.astro";
 
 import ProjectShowcase from "../components/Landing/ProjectShowcase";
@@ -8,7 +9,7 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 
 <html lang="en">
 	<head>
-		<MainHead title="Home page | Feernandooff" />
+		<MainHead title="Feernandooff | Frontend Developer" />
 	</head>
 	<body>
 		<main
@@ -75,19 +76,20 @@ import CodeBlock from "../components/Landing/CodeBlock.jsx";
 				</ul>
 			</div>
 		</section>
-		<section class="h-screen background-pattern relative pt-[20vh]">
+		<section class="min-h-screen background-pattern relative pt-[20vh]">
 			<div
 				class="absolute w-screen top-0 h-20 bg-gradient-to-b from-[#141B2F] to-transparent"
 			>
 			</div>
-			<div class="skills w-4/5 mx-auto">
-				<img src="/assets/skills.png" alt="" />
+			<div class="skills w-4/5 mx-auto pb-20">
+				<img src="/assets/skills.png" alt="" class="max-w-[100px]" />
 				<p class="text-[#818CF8] font-semibold text-md my-5">
 					What I can build
 				</p>
 				<ProjectShowcase client:visible />
 			</div>
 		</section>
+		<Footer />
 		<style>
 			.my-glass {
 				backdrop-filter: blur(5px);

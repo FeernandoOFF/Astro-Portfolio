@@ -23,19 +23,19 @@ export default function ProjectShowcase() {
         officiis itaque nihil? Ex mollitia sunt, quasi necessitatibus ratione
         pariatur reiciendis excepturi.
       </p>
-      <div className="circles absolute right-[30%] top-[25%]">
+      <div className="circles absolute lg:right-[30%] right-[50%] top-[25%]">
         <div
-          className={`h-40 w-40 bg-primary   rounded-full filter blur-2xl opacity-40 top-[0px] left-[0px] absolute ${
+          className={`h-20 w-20 lg:h-40 lg:w-40  bg-primary   rounded-full filter blur-2xl opacity-40 top-[0px] left-[0px] absolute ${
             selected === 'electronic' ? 'animate-blob' : ''
           }`}
         ></div>
         <div
-          className={`h-40 w-40 bg-secondary  rounded-full filter blur-2xl opacity-40 top-[4rem] left-[5rem] absolute
+          className={`h-20 w-20 lg:h-40 lg:w-40  bg-secondary  rounded-full filter blur-2xl opacity-40 top-[4rem] left-[5rem] absolute
         ${selected === 'web' ? 'animate-blob' : ''}
         `}
         ></div>
         <div
-          className={`h-40 w-40 bg-success   rounded-full filter blur-2xl opacity-40 top-[4rem] left-[-5rem] absolute
+          className={`h-20 w-20 lg:h-40 lg:w-40  bg-success   rounded-full filter blur-2xl opacity-40 top-[4rem] left-[-5rem] absolute
                 ${selected === 'mobile' ? 'animate-blob' : ''}
         `}
         ></div>
@@ -69,7 +69,7 @@ export default function ProjectShowcase() {
           <WebIcon />
         </IconComponent>
       </div>
-      <div className="flex flex-col md:flex-row justify-between mx-auto w-4/5 my-10 items-center">
+      <div className="flex flex-col md:flex-row justify-between mx-auto w-4/5 mt-20 items-center">
         <div class="stack my-8">
           <figure className="max-w-[200px]">
             <img
