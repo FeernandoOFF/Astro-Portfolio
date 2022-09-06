@@ -20,6 +20,7 @@
   "dependencies": {
     "astro-seo": "^0.6.0",
     "daisyui": "^2.24.0",
-    "preact": "^10.7.3"
+    "preact": "^10.7.3",
+    "prismjs": "^1.29.0"
   }
 }

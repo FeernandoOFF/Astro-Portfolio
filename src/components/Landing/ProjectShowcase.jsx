@@ -7,7 +7,7 @@ import ElectronicIcon from '../Icons/electronic-skill';
 import MobileIcon from '../Icons/mobileSkills';
 import WebIcon from '../Icons/desktopIcon';
 // ClodeBlock
-import CodeBlock from './CodeBlock';
+// import CodeBlock from './CodeBlock';
 
 export default function ProjectShowcase() {
   const [selected, setSelected] = useState('electronic');
@@ -93,7 +93,7 @@ export default function ProjectShowcase() {
             />
           </figure>
         </div>
-        <CodeBlock />
+        {/* <CodeBlock /> */}
       </div>
     </div>
   );

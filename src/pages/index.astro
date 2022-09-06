@@ -2,9 +2,17 @@
 import Layout from '@layouts/Layout.astro';
 
 import CommandPalette from '@components/Landing/CommandPalette.svelte';
-
 import ProjectShowcase from '../components/Landing/ProjectShowcase';
-import CodeBlock from '../components/Landing/CodeBlock.jsx';
+import CodeBlock from '@components/Landing/Codeblock.svelte';
+
+const text1 = `
+ const Fernando = {
+    name : "Fernando Obregon"
+    job : "Software developer"
+    passions :[ "Code","Travel","Learning" ]
+    location : "Dublin, Ireland"
+    learning : "Astro"
+ } `;
 ---
 
 <Layout title="Fernando Obregon | Portfolio">
@@ -26,7 +34,7 @@ import CodeBlock from '../components/Landing/CodeBlock.jsx';
       </div>
     </div>
     <div class="w-full lg:w-1/2 md:min-h-screen grid place-items-center">
-      <CodeBlock />
+      <CodeBlock language="js" code={text1} client:load />
     </div>
     <img
       src="/assets/main-gradient.png"
