@@ -20,7 +20,10 @@ export default function CodeBlock() {
       <pre data-prefix="5">
         <span className="text-primary pl-5">location</span> : "Dublin, Ireland"
       </pre>
-      <pre data-prefix="6"> {'}'} </pre>
+      <pre data-prefix="6">
+        <span className="text-primary pl-5">learning</span> : "Astro"
+      </pre>
+      <pre data-prefix="7"> {'}'} </pre>
     </div>
   );
 }
